@@ -381,13 +381,9 @@ rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
 
 .modal-label .user-policy {
-    margin-left: 12px;
+    /* margin-left: 12px; */
     margin-bottom: 30px;
 }
-
-/* .user-policy {
-    position: absolute;
-} */
 
 .policy-text::before {
     content: "";
