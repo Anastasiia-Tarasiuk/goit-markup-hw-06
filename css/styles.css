@@ -304,6 +304,9 @@ rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     border-radius: 50%;
     width: 30px;
     height: 30px;
+
+    transition: fill var(--duration) var(--cubic);
+
 }
 
 .close:hover {
@@ -335,6 +338,12 @@ rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     margin-bottom: 10px;
 }
 
+.modal-input, 
+.modal-input + svg,
+.modal-msg {
+    transition: border-color var(--duration) var(--cubic), fill var(--duration) var(--cubic); 
+}
+
 .modal-input:focus, 
 .modal-input:focus + svg,
 .modal-msg:focus {
@@ -342,7 +351,6 @@ rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     border-color: var(--color-blue);
     fill:var(--color-blue);
 }
-
 
 .modal-label .modal-msg {
     margin-bottom: 20px;
@@ -815,13 +823,21 @@ label:last-of-type svg {
     padding: 15px 16px;
 }
 
-.footer-form-input::placeholder {
+.footer-form-input {
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+
+    transition: border-color var(--duration) var(--cubic), fill var(--duration) var(--cubic);
+}
+
+.footer-form-input:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    fill:var(--color-blue);
 }
 
 .footer-form-btn {
