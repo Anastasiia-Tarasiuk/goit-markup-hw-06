@@ -315,6 +315,7 @@ rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
 
 .modal-form {
+    position: relative;
 }
 
 
@@ -384,16 +385,20 @@ rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     /* margin-left: 12px; */
     margin-bottom: 30px;
 }
+.user-policy {
+    position: absolute;
+}
 
 .policy-text::before {
     content: "";
     width: 16px;
     height: 15px;
     border: 1px solid var(--color-black);
-
+    margin-left: 8px;
 }
 
 .policy-text {
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
