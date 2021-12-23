@@ -84,11 +84,13 @@
                         <textarea class="modal-msg" name="user-msg" placeholder="Введите текст"></textarea>
                     </label>
                     <label class="modal-label">
-                        <input class="user-policy is-hidden" type="checkbox" name="user-policy" required>
-                        <span class="policy-text">Соглашаюсь с рассылкой и принимаю <a class="policy-conditions" href="">Условия договора</a></span>
-                        <svg width="16" height="15" class="form-icon is-hidden">
+                        <svg width="16" height="15">
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
+                        <input class="user-policy is-hidden" type="checkbox" name="user-policy" required>
+                        <span class="policy-text">Соглашаюсь с рассылкой и принимаю &thinsp;
+                            <a class="policy-conditions" href="">Условия договора</a>
+                        </span>
                     </label>
                     <button class="submit-btn" type="submit">Отправить</button>
                 </form>
@@ -414,6 +416,20 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-sign-up">
+                <p class="footer-title">Подпишитесь на рассылку</p>
+                <form class="footer-form">
+                    <label class="footer-form-label">
+                        <input class="footer-form-input" type="email" placeholder="E-mail">
+                    </label>
+                    <button class="footer-form-btn" type="submit">
+                        <span class="btn-text">Подписаться</span>
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
