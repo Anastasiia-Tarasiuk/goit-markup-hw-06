@@ -352,11 +352,9 @@ rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     fill:var(--color-blue);
 }
 
-.modal-label .modal-msg {
-    margin-bottom: 20px;
-}
-
 .label-text {
+    display: block;
+
     color: var(--color-grey);
 
     font-weight: 400;
@@ -403,31 +401,38 @@ rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     letter-spacing: 0.01em;
 }
 
-label:last-of-type{
+.msg-area {
     position: relative;
+    margin-bottom: 20px;
 }
 
-label:last-of-type svg {
-    position: absolute;
-    top: 5px;
-    left: 12px;
-    fill:var(--color-white);
+.modal-label:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 12px;
 }
 
 .user-policy {
     position: absolute;
 }
 
-.user-policy:checked + .policy-text::before {
-    border-color: var(--color-blue);
-    background-color: var(--color-blue);
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    fill:var(--color-white);
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--color-black);
+    border-radius: 2px;
 }
 
-.policy-text {
-    display: flex;
-    align-items: center;
-    padding-left: 12px;
-    margin-bottom: 30px;
+.user-policy:checked + .checkbox {
+    border-color: var(--color-blue);
+    background-color: var(--color-blue);
 }
 
 .policy-text {
@@ -437,16 +442,7 @@ label:last-of-type svg {
     letter-spacing: 0.03em;
 }
 
-.policy-text::before {
-    content: "";
-    margin-right: 8px;
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--color-black);
-    border-radius: 2px;
-}
-
-.policy-conditions{
+.policy-conditions {
     position: relative;
     color: var(--color-blue);
 }
@@ -454,12 +450,12 @@ label:last-of-type svg {
 .policy-conditions::after {
     content: "";
     position: absolute;
-    bottom: 5px;
+    bottom: 1px;
     left: 0;
     
     width: 100%;
     height: 1px;
-    background-color: var(--color-blue);
+    background-color: currentColor;
 }
 
 .submit-btn {
